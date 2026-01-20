@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Registration</h2>
+
+        <form>
+            <!-- Name -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"
+                   required
+                   pattern="[A-Za-z ]{3,}"
+                   title="Name should contain only letters and minimum 3 characters">
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   required>
+
+            <!-- Age -->
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age"
+                   required
+                   min="18"
+                   max="60">
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
